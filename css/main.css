@@ -408,9 +408,6 @@ a {
   fill: var(--color-border-icon);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.socials__icon:hover, .socials__icon:focus {
-  fill: var(--hero);
-}
 .socials__link {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -420,9 +417,12 @@ a {
   justify-items: center;
   justify-content: center;
   border-radius: 50%;
-}
-.socials__link:hover, .socials__link:focus {
-  background-color: var(--text-link);
   border-radius: 50%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__link:hover, .socials__link:focus {
+  color: var(--text-link);
+}
+.socials__link .socials__icon {
+  fill: var(--hero);
 }/*# sourceMappingURL=main.css.map */

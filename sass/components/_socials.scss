@@ -17,7 +17,7 @@
     &__icon {
     fill: var(--color-border-icon);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-@include {hover-fill-white;}
+// @include {hover-fill-white;}
 }
 
 
@@ -34,12 +34,17 @@
     border-radius: 50%;
     
 
-@include {hover-color-blue;
+@include hover-color-blue;
     border-radius: 50%;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .socials__icon {
+        fill: var(--hero);}
+}
+
+
 
  }
 
- }
+ 
 
 
