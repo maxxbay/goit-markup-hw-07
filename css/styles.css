@@ -66,7 +66,7 @@ img {
 
 }
 
-.header-logo {
+.header__logo {
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -81,34 +81,59 @@ img {
     text-decoration: none;
 }
 
-.header-logo .logo-web {
+.logo__web {
     color: var(--text-link)
 }
 
-.header-logo .logo-studio {
+.logo__studio {
     color: var(--logo-studio);
 }
 
-.main-nav {
+.header__box {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
 }
 
-.header-nav {
-    display: flex;
-    align-items: center;
-
-}
-
-.nav-header {
+.header__nav {
     display: flex;
     align-items: center;
 }
 
-.header-nav .item-header+.item-header {
-    margin-left: 50px;
+.header__menu {
+    display: flex;
 }
+
+
+.header__item {
+    margin-right: 50px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__item:hover .header__link {
+    color: var(--text-link)
+}
+
+.header__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.header__link--current {
+    color: var(--text-link);
+}
+
 
 .header-nav .link {
     display: block;
@@ -122,6 +147,7 @@ img {
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 
 .icon-mail {
     display: inline-flex;
@@ -203,7 +229,7 @@ img {
     position: relative;
 }
 
-.current::after {
+.header__link--current::after {
     display: block;
     content: "";
     position: absolute;
@@ -311,6 +337,7 @@ img {
 /* Background-hero */
 
 .hero {
+
     max-width: 1600px;
     width: 100%;
     height: 600px;
