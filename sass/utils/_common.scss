@@ -79,3 +79,17 @@ a {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+
+  @mixin hover-color-blue {
+    &:hover,
+    &:focus {
+color: var(--text-link);
+    }
+  }
+
+    @mixin hover-fill-white {
+    &:hover,
+    &:focus {
+fill: var(--hero);
+    }
+  }

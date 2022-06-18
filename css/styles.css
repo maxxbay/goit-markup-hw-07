@@ -568,6 +568,27 @@ img {
 
 }
 
+.section .section-name {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+    color: var(--primary-text-color);
+}
+
+.section .section-position {
+
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
 /* .hyr {
     width: 150px;
     height: 150px;

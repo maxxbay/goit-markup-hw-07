@@ -292,9 +292,6 @@ a {
 }
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ - ФОТО ПЛЮС ТЕКСТ  */
-.work {
-  padding-top: 0;
-}
 .work__title {
   font-weight: 700;
   font-size: 36px;
@@ -312,6 +309,9 @@ a {
   display: flex;
   position: relative;
   margin-right: 30px;
+}
+.work__img:last-child {
+  margin-right: 0;
 }
 
 .work__text {
@@ -332,91 +332,54 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.section-images {
+.team {
   display: flex;
-  justify-content: space-between;
-}
-
-.section-images .item + .item {
-  margin-left: 30px;
-}
-
-.item {
-  position: relative;
-}
-
-.section-item-img {
-  display: flex;
-  position: relative;
-}
-
-.section-text-image {
-  display: inline-block;
-  position: absolute;
-  padding-top: 27px;
-  padding-bottom: 27px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--hero);
-  background: rgba(47, 48, 58, 0.8);
-}
-
-/* SECTION середина - іконки */
-.section-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
   background-color: var(--button-bcg);
 }
-
-.section-secondary-block {
-  background-color: var(--hero);
-}
-
-/* SECTION IMAGES */
-.section-down {
-  display: flex;
-}
-
-.section-down .item + .item {
-  margin-left: 30px;
-}
-
-.section-secondary-block {
-  padding-top: 30px;
-  padding-bottom: 16px;
-}
-
-.section .section-title-second {
+.team__title {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
+}
+.team__list {
+  display: flex;
+  align-items: center;
+}
+.team__item {
+  margin-right: 30px;
+  background-color: var(--hero);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+.team__photo {
+  display: block;
+  margin-bottom: 30px;
+}
+.team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: var(--primary-text-color);
 }
-
-.section .section-text {
-  max-width: 270px;
-  font-size: 14px;
-  line-height: 1.71;
+.team__position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.03em;
-  /* color: var(--text-color); */
+  color: var(--text-color);
+  font-weight: 400;
 }
-
-.section .section-name {
+.team__worker {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -426,19 +389,40 @@ a {
   color: var(--primary-text-color);
 }
 
-.section .section-position {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
+.socials {
+  display: flex;
+  padding-bottom: 30px;
+  justify-content: center;
 }
-
-/* .hyr {
-    width: 150px;
-    height: 150px;
-} */
-.bcg-item {
-  background-color: var(--hero);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+.socials__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+.socials__box:not(:last-child) {
+  margin-right: 10px;
+}
+.socials__icon {
+  fill: var(--color-border-icon);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__icon:hover, .socials__icon:focus {
+  fill: var(--hero);
+}
+.socials__link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.socials__link:hover, .socials__link:focus {
+  background-color: var(--text-link);
+  border-radius: 50%;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */
