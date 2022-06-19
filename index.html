@@ -469,19 +469,19 @@
                         <textarea class="feedback__text" name="user-comment" placeholder="Введите текст"></textarea>
                     </label>
 
-                    <label class="feedback__field--policy">
-                        <input class="feedback__checkbox feedback__checkbox--iconpolicy invisible" type="checkbox"
-                            name="accept-policy" required />
-                        <span class="feedback__iconpolicy feedback__checkbox--checked">
-                            <svg class="check-icon" width="11" height="8">
+                    <label class="feedback__field--policy checkbox">
+                        <input class="feedback__checkbox feedback__checkbox--iconpolicy invisible checkbox__input"
+                            type="checkbox" name="accept-policy" required />
+                        <span class="feedback__iconpolicy checkbox__input--accent">
+                            <svg class="checkbox__icon checkbox__input--checked" width="11" height="8">
                                 <use href="./images/icons.svg#icon-check"></use>
                             </svg>
                         </span>
                         <span class="policy-label">Соглашаюсь с рассылкой и принимаю <a class="policy-link"
                                 href="">Условия
                                 договора</a></span>
-                    </label>
-                    <button type="submit" class="feedback-submit">Отправить</button>
+                    </label class="feedback__send">
+                    <button type="submit" class="feedback__submit">Отправить</button>
                 </form>
             </div>
         </div>
