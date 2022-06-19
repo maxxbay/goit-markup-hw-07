@@ -80,10 +80,10 @@ a {
     padding-bottom: 94px;
   }
 
-  @mixin hover-color-blue {
+  @mixin hover-bcgcolor-blue {
     &:hover,
     &:focus {
-color: var(--text-link);
+background-color: var(--text-link);
     }
   }
 
@@ -91,5 +91,14 @@ color: var(--text-link);
     &:hover,
     &:focus {
 fill: var(--hero);
+    }
+  }
+
+  @mixin button-hover-team {
+    .selection:hover .socials__icon,
+    .selection:focus .socials__icon {
+      background-color: var(--text-link);
+      fill: var(--hero);
+      border-radius: 50px;
     }
   }
