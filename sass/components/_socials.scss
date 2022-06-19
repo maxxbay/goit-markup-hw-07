@@ -39,7 +39,7 @@
  .socials__link:hover .socials__icon,
  .socials__link:focus .socials__icon {
     fill: var(--hero);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-fill;
 
 
  } }

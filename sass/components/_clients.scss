@@ -43,7 +43,7 @@
 }
    &__names {
     fill: var(--color-border-icon);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-fill;
 
    }
 } 
@@ -51,7 +51,7 @@
 .clients__link:hover .clients__names,
 .clients__link:focus .clients__names {
     fill: var(--text-link);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-fill;
 
 }
 

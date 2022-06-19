@@ -56,7 +56,7 @@
     letter-spacing: 0.03em;
 
     color: var(--footer-color-text);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-color;
 
     text-decoration: none;
     }
@@ -66,7 +66,7 @@
 &__item--link:hover,
 &__item--link:focus {
     color: var(--text-link);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-color;
 
 }
 }

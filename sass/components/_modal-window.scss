@@ -42,15 +42,15 @@
     border-radius: 50%;
     background-color: var(--hero);
     cursor: pointer;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition-fill;
      
     &__icon {
     fill: currentColor;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    @include transition-fill;}
         
     &:hover {
     fill: var(--text-link);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+    @include transition-fill;}
 
     }
     }
